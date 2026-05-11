@@ -4,83 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calendário Acadêmico — UniFECAF</title>
-<meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbziD0YSJ8rxDIb5iRxk9jGoHDFOryOYXqZ1DRN3yOUDuJdKSjU9JdW_HH8Hdt1tMobp/exec">
+<meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbzVFWl4q8aETL6FXnD8OC2SSLEQLa2GJVWsA6dHIwb5DwKMvz2lM_Lf5-mlGdrQXE5b/exec">
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #242149 0%, #1A3666 60%, #0E77CC 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .card {
-    background: white;
-    border-radius: 20px;
-    padding: 48px 40px;
-    text-align: center;
-    max-width: 380px;
-    width: 90%;
-    box-shadow: 0 20px 60px rgba(0,0,0,.2);
-  }
-  .logo { font-size: 28px; font-weight: 800; color: #1A3666; margin-bottom: 8px; }
-  .logo span { color: #0E77CC; }
-  .subtitle { font-size: 14px; color: #7a8faa; margin-bottom: 32px; }
-  .spinner {
-    width: 40px; height: 40px;
-    border: 3px solid #e2e8f4;
-    border-top-color: #0E77CC;
-    border-radius: 50%;
-    animation: spin .7s linear infinite;
-    margin: 0 auto 20px;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  .msg { font-size: 14px; color: #3d5068; font-weight: 600; margin-bottom: 8px; }
-  .sub { font-size: 12px; color: #7a8faa; margin-bottom: 28px; }
-  .btn {
-    display: inline-block;
-    background: #0E77CC;
-    color: white;
-    text-decoration: none;
-    padding: 12px 28px;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 700;
-    transition: background .2s;
-  }
-  .btn:hover { background: #1A3666; }
-  .badge {
-    display: inline-block;
-    background: #33DB89;
-    color: #04342C;
-    font-size: 10px;
-    font-weight: 700;
-    padding: 4px 12px;
-    border-radius: 20px;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:"Segoe UI",sans-serif; background:linear-gradient(135deg,#242149 0%,#1A3666 60%,#0E77CC 100%); min-height:100vh; display:flex; align-items:center; justify-content:center; }
+  .card { background:white; border-radius:20px; padding:48px 40px; text-align:center; max-width:380px; width:90%; box-shadow:0 20px 60px rgba(0,0,0,.2); }
+  .logo img { height:40px; margin-bottom:16px; }
+  .subtitle { font-size:14px; color:#7a8faa; margin-bottom:32px; font-family:"Montserrat",sans-serif; font-weight:600; }
+  .spinner { width:40px; height:40px; border:3px solid #e2e8f4; border-top-color:#0E77CC; border-radius:50%; animation:spin .7s linear infinite; margin:0 auto 20px; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .msg { font-size:14px; color:#3d5068; font-weight:600; margin-bottom:8px; }
+  .sub { font-size:12px; color:#7a8faa; margin-bottom:28px; }
+  .btn { display:inline-block; background:#0E77CC; color:white; text-decoration:none; padding:12px 28px; border-radius:30px; font-size:14px; font-weight:700; }
+  .badge { display:inline-block; background:#33DB89; color:#04342C; font-size:10px; font-weight:700; padding:4px 12px; border-radius:20px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:20px; }
 </style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="card">
   <div class="badge">Presencial · 2026.2</div>
-  <div class="logo">Uni<span>FECAF</span></div>
+  <div class="logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAH0AAAAe3CAYAAABaV1b8AAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4K..." style="filter:invert(1) sepia(1) saturate(5) hue-rotate(180deg)"></div>
   <div class="subtitle">Calendário Acadêmico</div>
   <div class="spinner"></div>
   <div class="msg">Abrindo o calendário...</div>
   <div class="sub">Se não abrir automaticamente, clique abaixo</div>
-  <a class="btn" href="https://script.google.com/macros/s/AKfycbziD0YSJ8rxDIb5iRxk9jGoHDFOryOYXqZ1DRN3yOUDuJdKSjU9JdW_HH8Hdt1tMobp/exec" target="_top">
-    Abrir Calendário
-  </a>
+  <a class="btn" href="https://script.google.com/macros/s/AKfycbzVFWl4q8aETL6FXnD8OC2SSLEQLa2GJVWsA6dHIwb5DwKMvz2lM_Lf5-mlGdrQXE5b/exec" target="_top">Abrir Calendário</a>
 </div>
 <script>
-  // Força abertura no navegador padrão, não no app do Drive
   setTimeout(function() {
-    window.location.replace("https://script.google.com/macros/s/AKfycbziD0YSJ8rxDIb5iRxk9jGoHDFOryOYXqZ1DRN3yOUDuJdKSjU9JdW_HH8Hdt1tMobp/exec");
-  }, 1000);
+    window.location.replace("https://script.google.com/macros/s/AKfycbzVFWl4q8aETL6FXnD8OC2SSLEQLa2GJVWsA6dHIwb5DwKMvz2lM_Lf5-mlGdrQXE5b/exec");
+  }, 800);
 </script>
 </body>
 </html>
